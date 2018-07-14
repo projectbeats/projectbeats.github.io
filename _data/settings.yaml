@@ -1,0 +1,75 @@
+# Project Meta
+# Project Meta
+title:        "Project Beats"
+tagline:      "Drumming | Breakdown | Transcriptions"
+description:  |-
+  Sharing my music and teaching drums through songs.
+language:     "en"
+email:        "info[at]projectbeats.tv"
+
+## Social Media Icons
+social:
+  - label: "Twitter"
+    link: "https://twitter.com/ProjectBeats_J"
+    icon: "twitter"
+
+  - label: "Youtube"
+    link: "https://www.youtube.com/channel/UCMG2L1X3A8cscCcvr92Jd_w"
+    icon: "youtube"
+
+  - label: "Instagram"
+    link: "https://www.instagram.com/projectbeats_joven/"
+    icon: "instagram"
+
+
+## Google Analytics Things
+analytics:
+  enable: true
+  trackid: UA-XXXXX-Y
+tagmanager:
+  enable: false
+  containerid: ""
+google_verify:
+  enable: false
+  verification: ""
+maps:
+  enable: false
+  apikey: ""
+
+## Site WebManifest
+manifest:
+  name: Seed Project
+  short_name: JkylSeed
+  description:
+  language: it
+  icons:
+    - src: "/assets/img/icons.png"
+      sizes: 192x192
+
+## Browser Configuration
+browserconfig:
+- key: square70x70logo
+  src: "/assets/img/tile.png"
+
+- key: square150x150logo
+  src: "/assets/img/tile.png"
+
+- key: wide310x150logo
+  src: assets/img/tile-wide.png
+
+- key: square310x310logo
+  src: assets/img/tile.png
+
+## Robots
+robotstxt: "
+  # www.robotstxt.org/\n
+  # Allow crawling of all content\n
+  User-agent: *\n
+  Disallow: /\n
+"
+
+## Humans
+humanstxt: "
+  # humanstxt.org/\n
+  # The humans responsible & technology colophon\n
+"

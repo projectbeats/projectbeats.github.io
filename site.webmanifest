@@ -1,0 +1,20 @@
+---
+layout: null
+---
+
+{% assign manifest = site.data.settings.manifest %}
+{
+  "name": "{{ manifest.name }}",
+  "short_name": "{{ manifest.short_name }}",
+  "start_url": "/",
+  "display": "standalone",
+  "language": "{{ manifest.language }}",
+  "description": "{{ manifest.description }}",
+  "icons": [
+    {% for icon in manifest.icons %}{
+      "src": "{{ icon.src }}",
+      "sizes": "{{ icon.sizes }}",
+      "type": "image/png"
+    }{% if forloop.true == true  and forloop.last != true %},{% endif %}{% endfor %}
+  ]
+}

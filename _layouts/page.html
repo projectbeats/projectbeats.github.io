@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+{% if page.layout != "home" %}
+  {% include page-heading.html %}
+{% endif %}
+
+<div role="main" style="min-height: 500px;">
+{{ content }}
+</div><!-- end of [role="main"] -->
+
+{% include footer.html %}
