@@ -1,0 +1,19 @@
+---
+layout: compress
+---
+[
+{% for collection in site.collections %}
+  {
+    "{{ collection.label }}": [
+      {% for item in site[collection.label] %}
+      {
+        "title": "{{ item.title }}",
+        "url": "{{ site.url }}{{ post.url }}",
+        "date": "{{ item.date }}",
+        "content": "{{ item.content | strip_newlines | strip_html }}"
+      }{% if forloop.last != true %},{% endif %}
+      {% endfor %}
+    ]
+  }{% if forloop.last != true %},{% endif %}
+{% endfor %}
+]

@@ -1,0 +1,24 @@
+---
+layout: home
+title: Home
+---
+
+<div class="container text-center my-5">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-11 col-md-8">
+      <h1 class="display-3">{{ site.title }}</h1>
+      <p class="lead">
+        {{ site.tagline }} <br> <small>{{ site.description }}</small>
+      </p>
+
+        <ul class="list-inline small">
+          {% for item in site.data.settings.social %}
+          <li class="list-inline-item mb-2">
+            <i class="fab fa-lg fa-{{ item.icon }} text-warning"></i> &nbsp; <a class="text-warning" href="{{ item.link }}">{{ item.label }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+
+    </div>
+  </div>
+</div>
